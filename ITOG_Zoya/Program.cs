@@ -28,4 +28,17 @@ int count=0;
 return count;
 };
 
+void TruncationArray(string[] array2, string[] arrayResult) // Метод "усечения" массива до количества ненулевых (непустых) элементов
+{ int count=0;
+    for (int i = 0; i < array2.Length; i++)
+        {
+            if(String.IsNullOrEmpty(array2[i])) 
+                {;}
+               else
+                { arrayResult[count] = array2[i];};
+                count++;
+        };
+};
+    
+
 
