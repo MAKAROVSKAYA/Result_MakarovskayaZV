@@ -13,5 +13,19 @@ int n = HreeCharacters(array1, array2);
 string[] arrayResult = new string[n]; // массив, содержащий только элементы на три и менее символов
 TruncationArray(array2, arrayResult);
 PrintArray(arrayResult);
-  
+    
+int HreeCharacters(string[] array1, string[] array2) // Метод фильтрации массива на 3 символа
+{
+int count=0;
+    for (int i = 0; i < array1.Length; i++)
+        {
+        if(array1[i].Length <= 3)
+            {
+            array2[count] = array1[i];
+            count++;
+            }
+        };
+return count;
+};
+
 
