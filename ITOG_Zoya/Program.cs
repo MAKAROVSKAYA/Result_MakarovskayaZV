@@ -39,6 +39,14 @@ void TruncationArray(string[] array2, string[] arrayResult) // Метод "ус�
                 count++;
         };
 };
-    
+    void PrintArray(string[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.WriteLine($"{i+1}-й элемент массива на три и менее элементов = {array[i]} ");
+    }
+    Console.WriteLine();
+};
+
 
 
