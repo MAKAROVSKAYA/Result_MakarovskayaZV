@@ -6,4 +6,12 @@
 // коллекциями,  лучше обойтись исключительно массивами
 Console.WriteLine("Итоговая задача - общая часть 1");
 
+string[] array1 = new string[6] {"123", "23", "hello", "world", "res", "two"};
+string[] array2 = new string[array1.Length];
+int n = HreeCharacters(array1, array2);
+ Console.WriteLine($"количество элементов массива на три и менее символов = {n} ");
+string[] arrayResult = new string[n]; // массив, содержащий только элементы на три и менее символов
+TruncationArray(array2, arrayResult);
+PrintArray(arrayResult);
+  
 
